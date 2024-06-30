@@ -1,0 +1,103 @@
+#calculator {
+    background: black;
+    height: 500px;
+    width: 300px;
+    color: white;
+    font-size: 30px;
+    border-radius: 5%;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+#display_box {
+    position: relative;
+    height: 150px;
+}
+
+#display {
+    position: absolute;
+    width: 230px;
+    text-align: right;
+    right: 35px;
+    bottom: -20px;
+    font-size: 73px;
+}
+
+#buttons {
+    position: relative;
+    margin: 20px;
+}
+
+#keys {
+    position: relative;
+    height: 300px;
+    width: 260px;
+    align-items: center;
+    align-content: center;
+}
+
+.rectangle {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    margin-bottom: -25.5px;
+    width: 66px;
+    height: 50.5px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.circle.orange {
+    background-color: rgb(255, 166, 0);
+}
+
+.circle.grey {
+    background-color: darkgrey;
+    color: black;
+}
+
+.dark {
+    background-color: rgba(80, 80, 80, 1);
+}
+
+.circle.orange:hover {
+    background-color: rgb(255, 205, 111);
+}
+
+.circle.grey:hover {
+    background-color: rgb(235, 233, 233);
+}
+
+.dark:hover {
+    background-color: rgb(134, 134, 134);
+}
+
+body:has(#zero:hover) #zero{
+    background-color: rgb(134, 134, 134);
+}
+
+#AC {
+    font-size: 25px;
+}
+
+.cells {
+    position: relative;
+}

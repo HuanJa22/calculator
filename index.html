@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" /> <!--this is to set characters to default UTF-8 (don't ask wut UTF-8 is, idk either)-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--NO CLUE WUT THIS DOES i just copy pasted-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--This is to rescale for mobile devices-->
+        <title>Calculator</title>
+        <link rel="icon" type="image/x-icon" href="./calculator-icon.jpg">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="display_box">
+                <div id="display">0</div>
+            </div>
+            <div id="buttons">
+                <table id="keys">
+                    <tr>
+                        <td class="cells"><div class="circle grey" id="AC" onclick="AC();">AC</div></td>
+                        <td class="cells"><div class="circle grey" onclick="changeSign();"><numerator>&#8314;</numerator>&frasl;<denominator>&#8331;</denominator></div></td>
+                        <td class="cells"><div class="circle grey" onclick="percentage();">&#37;</div></td>
+                        <td class="cells"><div class="circle orange" id="div" onclick="mult_div('/');">&divide;</div></td>
+                    </tr>
+                    <tr>
+                        <td class="cells"><div class="circle dark" onclick="number(7);">7</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(8);">8</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(9);">9</div></td>
+                        <td class="cells"><div class="circle orange" id="mult" onclick="mult_div('*');">&times;</div></td>
+                    </tr>
+                    <tr>
+                        <td class="cells"><div class="circle dark" onclick="number(4);">4</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(5);">5</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(6);">6</div></td>
+                        <td class="cells"><div class="circle orange" id="sub" onclick="add_sub('-');">&minus;</div></td>
+                    </tr>
+                    <tr>
+                        <td class="cells"><div class="circle dark" onclick="number(1);">1</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(2);">2</div></td>
+                        <td class="cells"><div class="circle dark" onclick="number(3);">3</div></td>
+                        <td class="cells"><div class="circle orange" id="add" onclick="add_sub('+');">+</div></td>
+                    </tr>
+                    <tr>
+                        <td class="cells"><div class="circle dark" id="zero" onclick="number(0);">0</div></td>
+                        <td class="cells"><div class="circle dark" id="zero" onclick="number(0);"></div><div class="rectangle dark" id="zero" onclick="number(0);"></div></td>
+                        <td class="cells"><div class="circle dark" onclick="dot();">.</div></td>
+                        <td class="cells"><div class="circle orange" onclick="equal();">=</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
